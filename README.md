@@ -15,7 +15,6 @@ This repository documents my journey in setting up a **home lab** using a **Leno
 - **Lenovo ThinkCentre M920q** (Debian Server)
 - **Raspberry Pi 5** (IoT & Fleet Operations Testing)
 - **Netgear GS108 & GS105** (Networking)
-- **TP-Link AC600 USB Wi-Fi Adapter**
 
 ### Software
 - **Debian 12 (Server Edition)**
