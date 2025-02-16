@@ -63,7 +63,7 @@ GitHub Actions can automate fleet deployments whenever a change is pushed to the
 
    jobs:
      deploy:
-       runs-on: ubuntu-latest
+       runs-on: self-hosted
 
        steps:
          - name: Checkout repository
