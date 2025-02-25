@@ -1,49 +1,88 @@
-# Home Lab
+# Home Lab Documentation
 
 ## Overview
-This repository documents my journey in setting up a **home lab** using a **Lenovo ThinkCentre M920q** and **Raspberry Pi 5**. The goal is to experiment with **system administration, networking, DevOps, and fleet management** while building a portfolio of hands-on projects.
+This repository provides comprehensive documentation for setting up and managing a home lab, focusing on getting hands-on experience with server deployment and fleet operations. Documented are the steps required for each part of the setup within the specific environment.
 
-## Objectives
-- Learn **Linux system administration** by installing and configuring Debian.
-- Develop **networking skills** using Netgear switches.
-- Implement **fleet operations concepts** for enterprise-level system management.
-- Experiment with **automation and scripting** using Python and Bash.
-- Create a **GitHub repository** to document and share knowledge.
+## Repository Structure
 
-## Home Lab Setup
-### Hardware
-- **Lenovo ThinkCentre M920q** (Debian Server)
-- **Raspberry Pi 5** (IoT & Fleet Operations Testing)
-- **Netgear GS108 & GS105** (Networking)
+```
+home-lab-main/
+├── hardware/
+│   ├── hardware_research_and_selection.md
+│   └── version0.md
+├── home-server1-setup/
+│   ├── 00-debian_installation.md
+│   ├── 01-configuration.md
+│   ├── 02-system_monitoring.md
+│   ├── 03-automation_alerts.md
+│   ├── 04-log-management.md
+│   ├── 05-security-hardening.md
+│   ├── 06-boot-issues.md
+│   └── scripts/
+│       ├── log_alert.sh
+│       ├── system_alert.sh
+│       └── system_health_check.sh
+├── fleet_management/
+│   ├── 00-fleet_setup.md
+│   ├── 01-fleet_monitoring.md
+│   ├── 02-fleet_automation.md
+│   ├── 03-fleet_validation_and_rollbacks.md
+│   ├── 04-fleet_cicd_pipeline.md
+│   ├── 04-fleet_cicd_pipeline_troubleshooting.md
+│   ├── 05-fleet_rollback_and_disaster_recovery.md
+│   └── scripts/
+│       └── alert.py
+└── README.md
+```
 
-### Software
-- **Debian 12 (Server Edition)**
-- **Python and Bash for automation**
-- **Git for version control**
-- **SSH for remote management**
-- **MQTT for fleet communication**
+## Contents
 
-## Projects & Documentation
-1. **Debian Installation Guide** – [Debian Installation](debian_installation.md)
-2. **Network Configuration & VLAN Setup** *(coming soon)*
-3. **Fleet Management with MQTT** *(coming soon)*
-4. **Automated System Monitoring Scripts** *(coming soon)*
+### 1. Hardware
+This section details the research, selection, and setup of the hardware components used in the home lab.
 
-## How to Use This Repository
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/kb35/home-lab.git
-   cd home-lab
-   ```
-2. Read through the documentation and follow along.
-3. Contribute by suggesting improvements or additional projects.
+- **hardware_research_and_selection.md**: Describes the criteria for selecting hardware, including considerations for performance, power consumption, and expandability.
+- **version0.md**: Documents the initial hardware setup, listing components and their configurations.
 
-## Future Plans
-- Automate system maintenance tasks.
-- Set up projects on Raspberry Pi.
-- Implement logging and monitoring tools.
-- Explore LLMs.
+### 2. Home Server 1 Setup
+Guides for setting up and configuring the primary server (Home-Server1) running Debian.
+
+- **00-debian_installation.md**: Step-by-step instructions for installing Debian on Home-Server1.
+- **01-configuration.md**: Post-installation setup, covering network configuration, user management, and security hardening.
+- **02-system_monitoring.md**: Instructions for setting up system monitoring tools to ensure the server's health and performance.
+- **03-automation_alerts.md**: Guide for setting up automation alerts to monitor and notify system events.
+- **04-log-management.md**: Documentation on managing logs, including collection, rotation, and storage.
+- **05-security-hardening.md**: Steps to enhance server security, including firewall setup and access controls.
+- **06-boot-issues.md**: Issues meet when installing Proxmox and troubleshooting the server boot up.
+- **scripts/**: Contains automation and configuration scripts used during the server setup:
+  - **log_alert.sh**: Script for generating alerts based on log events.
+  - **system_alert.sh**: Script to trigger system alerts based on specific conditions.
+  - **system_health_check.sh**: Script to perform regular system health checks.
+
+### 3. Fleet Management
+Comprehensive documentation for managing a fleet of servers and devices.
+
+- **00-fleet_setup.md**: Initial setup procedures for managing multiple devices.
+- **01-fleet_monitoring.md**: Strategies and tools for monitoring the health and status of the fleet.
+- **02-fleet_automation.md**: Automation workflows and scripts to streamline fleet management tasks.
+- **03-fleet_validation_and_rollbacks.md**: Methods for validating updates and performing rollbacks if needed.
+- **04-fleet_cicd_pipeline.md**: Guide to setting up a CI/CD pipeline for continuous integration and deployment.
+- **04-fleet_cicd_pipeline_troubleshooting.md**: Troubleshooting common issues encountered in the CI/CD pipeline.
+- **05-fleet_rollback_and_disaster_recovery.md**: Disaster recovery plans and rollback strategies to maintain fleet stability.
+- **scripts/**: Contains fleet management scripts, including **alert.py** for monitoring alerts.
+
+## Getting Started
+To build and manage your own home lab:
+1. **Hardware**: Begin by reviewing the hardware selection documentation and setting up your equipment.
+2. **Home Server 1 Setup**: Follow the setup guides to install and configure your primary server.
+3. **Fleet Management**: Use the fleet management documentation to scale and automate your lab environment.
+
+## Contributing
+Contributions are welcome! If you have suggestions or improvements, feel free to open issues or submit pull requests.
+
+## License
+[Specify License Here]
 
 ---
-This home lab serves as both a **learning platform** and a **portfolio showcase** to demonstrate hands-on expertise in systems administration, IT, DevOps, and networking.
+
+This documentation is designed to provide clear and actionable steps for anyone interested in building and managing a home lab environment.
 
