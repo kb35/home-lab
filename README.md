@@ -70,19 +70,3 @@ Comprehensive documentation for managing a fleet of servers and devices.
 - **05-fleet_rollback_and_disaster_recovery.md**: Disaster recovery plans and rollback strategies to maintain fleet stability.
 - **scripts/**: Contains fleet management scripts, including **alert.py** for monitoring alerts.
 
-## Getting Started
-To build and manage your own home lab:
-1. **Hardware**: Begin by reviewing the hardware selection documentation and setting up your equipment.
-2. **Home Server 1 Setup**: Follow the setup guides to install and configure your primary server.
-3. **Fleet Management**: Use the fleet management documentation to scale and automate your lab environment.
-
-## Contributing
-Contributions are welcome! If you have suggestions or improvements, feel free to open issues or submit pull requests.
-
-## License
-[Specify License Here]
-
----
-
-This documentation is designed to provide clear and actionable steps for anyone interested in building and managing a home lab environment.
-
